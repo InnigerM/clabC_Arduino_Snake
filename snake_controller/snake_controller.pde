@@ -14,9 +14,6 @@ void draw() {
   if (keyPressed) {
       if(key == 10){  //ENTER
         value = '1';
-      } else if(key == ESC){ //ESCAPE
-        key = 0;
-        value = '6';
       } else if(key == 97){ //a
         value = '2';
       } else if(key == 115){ //s
@@ -25,7 +22,7 @@ void draw() {
         value = '4';
       } else if(key == 119){ //w
         value = '5';
-      } else if(key == 8){
+      } else if(key == 8){ //ESC
         value = '6';
       }
       myPort.write(value);
